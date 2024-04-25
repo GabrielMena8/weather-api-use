@@ -1,5 +1,6 @@
 
 import styles from './App.module.css'
+import Form from './components/Form/Form'
 
 function App() {
  
@@ -13,7 +14,7 @@ function App() {
       <div className={
         styles.container
       }>
-        <p>1aaaaaaaaaaaaa</p>
+        <Form />
 
       </div>
 
