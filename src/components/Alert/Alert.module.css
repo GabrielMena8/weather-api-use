@@ -1,0 +1,13 @@
+.alert{
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+p{
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bold;
+}

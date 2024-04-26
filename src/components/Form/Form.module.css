@@ -7,6 +7,35 @@
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+    
+}
+.form input[type="text"],
+.form select{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+
+    border-radius: 5px;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+}
+
+option{
+    background-color: #333;
+   
+}
+
+.btn{
+    background-color: #f1356d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
 }
 
 
+.field::placeholder{
+    color: #333;
+}
