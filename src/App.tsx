@@ -8,7 +8,7 @@ import Weather from './components/Weather/Weather'
 
 function App() {
  
- const {fetchWeather, weather, loading, hasData} = useWeather()
+ const {fetchWeather, weather, loading, hasData, error} = useWeather()
  
   return (
     <>
@@ -37,6 +37,10 @@ function App() {
                       <div className="sk-circle11 sk-child"></div>
                       <div className="sk-circle12 sk-child"></div>
                     </div>}
+
+        {error && <p className={
+          styles.errors
+        }>{error}</p>}
         {hasData && <Weather weather={weather} />}
 
         
