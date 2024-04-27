@@ -1,0 +1,69 @@
+.name{
+    font-size:5rem;
+    font-weight: 600;
+    
+
+}
+
+
+.container{
+    width: 95%;
+
+    max-width: 100rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    color:black
+
+
+
+}
+
+@media (max-width: 768px){
+    .container{
+        margin-top: 5rem;
+    }
+    
+}
+.temp{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    
+} 
+
+.temp span{
+    font-weight: 400;
+    font-size: 3rem;
+    margin-left: 1rem;
+    color: rosybrown;
+}
+
+
+.max_temp{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.max_temp span{
+    font-weight: 400;
+    font-size: 3rem;
+    margin-left: 1rem;
+    color: red
+}
+
+.min_temp{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.min_temp span{
+    font-weight: 400;
+    font-size: 3rem;
+    margin-left: 1rem;
+    color: lightblue
+}
+

@@ -4,7 +4,15 @@ import { ChangeEvent, useState } from 'react'
 import { SearchType } from '../../types'
 import Alert from '../Alert/Alert'
 
-export default function Form() {
+
+type Props = {
+    fetchWeather: (search: SearchType) => Promise<void>;
+}
+
+
+
+
+export default function Form({fetchWeather}: Props) {
 
     const [search, setSearch] = useState<SearchType>({
         city: '',
@@ -28,9 +36,10 @@ export default function Form() {
         e.preventDefault()
         if(Object.values(search).includes('')){
             setAlert("Todos los campos son obligatorios")
+            
             return
         }
-
+        fetchWeather(search);
     }
   return (
     <form className={
@@ -71,9 +80,13 @@ export default function Form() {
         </div>
 
         <div>
+
+            
             <input className={
                 styles.btn
             }
+
+         
             type="submit" value="Buscar Clima" />
         </div>
         {alert && <Alert>
